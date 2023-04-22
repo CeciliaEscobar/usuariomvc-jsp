@@ -9,12 +9,22 @@ package com.cecilia.model;
  * @author escob
  */
 public class Usuario {
+    private String id;
     private String nombre;
     private String email;
+    private String nacionalidad;
     
     public Usuario(){
         
     }
+    
+      public void setId(String id){
+        this.id = id;
+    }
+    public String getId(){
+        return id;
+    }
+    
     
      public void setNombre(String name){
         this.nombre = name;
@@ -28,6 +38,13 @@ public class Usuario {
     }
     public String getEmail(){
         return email;
+    }
+    
+      public void setNacionalidad(String nacionalidad){
+        this.nacionalidad = nacionalidad;
+    }
+    public String getNacionalidad(){
+        return nacionalidad;
     }
     
 }

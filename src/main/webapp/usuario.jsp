@@ -14,11 +14,14 @@
     <body>
          <h1>Registro de Usuario</h1>
         <form action="<%= request.getContextPath()%>/UsuarioServlet" method="POST">
+            <label>ID:</label><input type="text" name="id">
+            <br> 
             <label>Nombre:</label><input type="text" name="nombre">
             <br> 
             <label>Email:</label><input type="email" name="email">
             <br>
-            
+            <label>Nacionalidad:</label><input type="text" name="nacionalidad">
+            <br>
             <input type="submit" value="Registrar"><br><br>
     </body>
 </html>
